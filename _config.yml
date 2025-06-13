@@ -1,0 +1,39 @@
+title: "Kiouranas Site"
+description: "A Jekyll site editable via Netlify CMS"
+baseurl: "" # αν έχεις custom subfolder, το αλλάζεις
+url: "https://kiouranas-site.netlify.app" # το αλλάζεις με το actual Netlify URL
+
+# Ενεργοποίηση collections για custom pages
+collections:
+  pages:
+    output: true
+    permalink: /:title/
+
+# Default values για όλα τα .md files
+defaults:
+  - scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: default
+
+# Plugins (προαιρετικά αλλά χρήσιμα)
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+
+markdown: kramdown
+
+# Φάκελοι που δεν θέλουμε να χτιστούν
+exclude:
+  - node_modules
+  - vendor
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - package.json
+  - yarn.lock
+
+# Να συμπεριληφθεί ο φάκελος admin (για Netlify CMS)
+include:
+  - admin
