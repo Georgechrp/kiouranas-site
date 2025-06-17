@@ -2,6 +2,13 @@
 layout: default
 title: Αρχική
 permalink: /
+featured:
+  date: 2025-06-17T18:55:28.157Z
+  image: /assets/uploads/cta.png
+  button_text: click here
+  headline: My first Post
+  text: text here
+  button_url: https://kiouranas-site.netlify.app/
 ---
 
 <!-- Featured Post -->
