@@ -17,6 +17,13 @@ defaults:
     values:
       layout: default
 
+  - scope:
+      path: "_pages/index.md"
+      type: "pages"
+    values:
+      layout: home
+
+
 # Plugins (προαιρετικά αλλά χρήσιμα)
 plugins:
   - jekyll-feed
