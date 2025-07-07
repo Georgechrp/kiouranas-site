@@ -37,3 +37,10 @@ exclude:
 # Να συμπεριληφθεί ο φάκελος admin (για Netlify CMS)
 include:
   - admin
+
+
+social:
+  twitter: "https://twitter.com/yourhandle"
+  facebook: "https://facebook.com/yourpage"
+  instagram: "https://instagram.com/yourhandle"
+  github: "https://github.com/yourusername"
