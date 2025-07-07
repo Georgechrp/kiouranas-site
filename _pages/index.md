@@ -1,4 +1,4 @@
-layout: default
+layout: home
 title: Kiouranas Kyriakos
 permalink: /
 featured:
