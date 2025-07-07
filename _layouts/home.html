@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="el">
+<head>
+  <meta charset="UTF-8" />
+  <title>{{ page.title }}</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="/assets/css/main.css" />
+</head>
+<body>
+  <div id="wrapper" class="fade-in">
+
+    {% include header.html %}
+    
+    <!-- Featured -->
+    {% if page.featured %}
+    <article class="post featured">
+      <header class="major">
+        <span class="date">{{ page.featured.date | date: "%B %d, %Y" }}</span>
+        <h2><a href="{{ page.featured.button_url }}">{{ page.featured.headline }}</a></h2>
+        <p>{{ page.featured.text }}</p>
+      </header>
+      <a href="{{ page.featured.button_url }}" class="image main"><img src="{{ page.featured.image }}" alt="" /></a>
+      <ul class="actions special">
+        <li><a href="{{ page.featured.button_url }}" class="button large">{{ page.featured.button_text }}</a></li>
+      </ul>
+    </article>
+    {% endif %}
+
+    <!-- Posts -->
+    {% if page.articles %}
+    <section class="posts">
+      {% for article in page.articles %}
+      <article>
+        <header>
+          <span class="date">{{ article.date | date: "%B %d, %Y" }}</span>
+          <h2><a href="{{ article.url }}">{{ article.title }}</a></h2>
+        </header>
+        <a href="{{ article.url }}" class="image fit"><img src="{{ article.image }}" alt="" /></a>
+        <p>{{ article.excerpt }}</p>
+        <ul class="actions special">
+          <li><a href="{{ article.url }}" class="button">Full Story</a></li>
+        </ul>
+      </article>
+      {% endfor %}
+    </section>
+    {% endif %}
+
+    {% include footer.html %}
+
+  </div>
+  <script src="/assets/js/main.js"></script>
+</body>
+</html>
