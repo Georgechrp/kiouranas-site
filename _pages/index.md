@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Αρχική
+title: Kiouranas Kyriakos
 permalink: /
 featured:
   date: 2025-06-17T18:55:28.157Z
