@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>{{ page.title }}</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="/assets/css/main.css" />
+</head>
+<body>
+  <div id="wrapper" class="fade-in">
+    {% include header.html %}
+    <div id="main">
+      <section class="post">
+        <header class="major">
+          {% if page.date %}
+          <span class="date">{{ page.date | date: "%B %d, %Y" }}</span>
+          {% endif %}
+          <h1>{{ page.heading }}</h1>
+          <p>{{ page.subtitle }}</p>
+        </header>
+        {% if page.image %}
+        <div class="image main"><img src="{{ page.image }}" alt="" /></div>
+        {% endif %}
+        {{ page.content | markdownify }}
+      </section>
+    </div>
+    {% include footer.html %}
+  </div>
+  <script src="/assets/js/main.js"></script>
+</body>
+</html>

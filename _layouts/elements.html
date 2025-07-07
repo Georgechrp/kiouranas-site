@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>{{ page.title }}</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="/assets/css/main.css" />
+</head>
+<body>
+  <div id="wrapper" class="fade-in">
+    {% include header.html %}
+    <div id="main">
+      <section class="post">
+        <header class="major">
+          <h1>{{ page.title }}</h1>
+        </header>
+        {% for section in page.sections %}
+          <h2>{{ section.section_title }}</h2>
+          {{ section.content | markdownify }}
+        {% endfor %}
+      </section>
+    </div>
+    {% include footer.html %}
+  </div>
+  <script src="/assets/js/main.js"></script>
+</body>
+</html>
