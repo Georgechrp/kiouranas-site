@@ -45,8 +45,21 @@
 
     <!-- Main content from pages -->
     <div id="main">
-      {{ content }}
+      {% if page.sections %}
+        <section class="post">
+          <header class="major">
+            <h1>{{ page.title }}</h1>
+          </header>
+          {% for section in page.sections %}
+            <h2>{{ section.section_title }}</h2>
+            {{ section.content | markdownify }}
+          {% endfor %}
+        </section>
+      {% else %}
+        {{ content }}
+      {% endif %}
     </div>
+
 
     <!-- Footer -->
     <footer id="footer">

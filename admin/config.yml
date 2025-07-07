@@ -60,3 +60,5 @@ collections:
             fields:
               - { label: "Section Title", name: "section_title", widget: "string" }
               - { label: "Content", name: "content", widget: "markdown" }
+
+
