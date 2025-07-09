@@ -18,17 +18,17 @@ collections:
           - { label: "Intro Text", name: "intro_text", widget: "markdown" }
           - { label: "Button Text", name: "intro_button_text", widget: "string" }
           - { label: "Button Icon", name: "intro_button_icon", widget: "string" }
-          - name: "posts"
-      - label: "Blog Posts"
-        folder: "_posts"
-        create: true
-        slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
-        fields:
-          - { label: "Title", name: "title", widget: "string" }
-          - { label: "Publish Date", name: "date", widget: "datetime" }
-          - { label: "Excerpt", name: "excerpt", widget: "text", required: false }
-          - { label: "Featured Image", name: "image", widget: "image", required: false }
-          - { label: "Body", name: "body", widget: "markdown" }
+  - name: "posts"
+    label: "Blog Posts"
+    folder: "_posts"
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Publish Date", name: "date", widget: "datetime" }
+      - { label: "Excerpt", name: "excerpt", widget: "text", required: false }
+      - { label: "Featured Image", name: "image", widget: "image", required: false }
+      - { label: "Body", name: "body", widget: "markdown" }
 
 
       - label: "About Me"
