@@ -1,7 +1,30 @@
 ---
 layout: default
 ---
+
 {% include intro.html %}
+
 <div id="main">
+
   {{ content }}
+
+  <section class="posts">
+    {% assign sorted_posts = site.posts | sort: "date" | reverse %}
+    {% for post in sorted_posts %}
+      <article>
+        <header>
+          <span class="date">{{ post.date | date: "%B %d, %Y" }}</span>
+          <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
+        </header>
+        {% if post.image %}
+          <a href="{{ post.url }}" class="image fit"><img src="{{ post.image }}" alt="{{ post.title }}" /></a>
+        {% endif %}
+        <p>{{ post.excerpt }}</p>
+        <ul class="actions special">
+          <li><a href="{{ post.url }}" class="button">Full Story</a></li>
+        </ul>
+      </article>
+    {% endfor %}
+  </section>
+
 </div>
