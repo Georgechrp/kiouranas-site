@@ -1,14 +1,8 @@
-<!-- Header -->
-<header id="header">
-  <a href="/" class="logo">Massively</a>
-</header>
+---
+layout: default
+---
 
-<!-- Navigation -->
-<nav id="nav">
-  <ul class="links">
-    <li><a href="/">Home</a></li>
-    <li><a href="/generic/">Contact</a></li>
-    <li><a href="/elements/">About me</a></li>
-  </ul>
-  {% include social.html class="icons alt" %}
-</nav>
+{% include intro.html %}
+<div id="main">
+  {{ content }}
+</div>
