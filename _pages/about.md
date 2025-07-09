@@ -4,4 +4,4 @@ layout: page
 permalink: /about/
 ---
 
-Γράψε εδώ το περιεχόμενο του About Me.
+This is the about me content. You can edit this from the CMS.

@@ -17,7 +17,7 @@ collections:
           - { label: "Intro Heading", name: "intro_heading", widget: "string" }
           - { label: "Intro Text", name: "intro_text", widget: "markdown" }
           - { label: "Button Text", name: "intro_button_text", widget: "string" }
-          - { label: "Button Icon", name: "intro_button_icon", widget: "string", default: "fa-arrow-down" }
+          - { label: "Button Icon", name: "intro_button_icon", widget: "string" }
 
       - label: "About Me"
         name: "about"

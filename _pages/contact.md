@@ -2,9 +2,10 @@
 title: "Contact"
 layout: page
 permalink: /contact/
-address: "1234 Somewhere Road #87257\nNashville, TN 00000-0000"
+
+address: "1234 Somewhere Road"
 phone: "(000) 000-0000"
-email: "info@untitled.tld"
+email: "info@example.com"
 ---
 
-Μπορείς να γράψεις και ένα εισαγωγικό μήνυμα για επικοινωνία εδώ.
+You can contact me via the form or the details below.
