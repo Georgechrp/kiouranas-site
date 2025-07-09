@@ -1,10 +1,10 @@
 ---
-title: "Contact"
+title: Contact
 layout: page
 permalink: /contact/
-address: "1234 Somewhere Road"
-phone: "(000) 000-0000"
-email: "info@example.com"
+address: brahami
+phone: (+30) 6972455628
+email: k.kiouranas@gmail.com
 ---
 
 Feel free to reach out.
