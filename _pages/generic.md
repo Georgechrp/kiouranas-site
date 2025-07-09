@@ -1,8 +1,8 @@
 ---
 layout: default
-title: Generic Page
+title: About me
 permalink: /generic/
-heading: This is a<br />Generic Page
+heading: This is a<br />About me
 subtitle: >
   Aenean ornare velit lacus varius enim ullamcorper proin aliquam
   facilisis ante sed etiam magna interdum congue. Lorem ipsum dolor
