@@ -13,61 +13,115 @@ collections:
         name: "index"
         file: "_pages/index.md"
         fields:
-          - { label: "Title", name: "title", widget: "string" }
-          - { label: "Permalink", name: "permalink", widget: "string", default: "/" }
-          
+          - label: "Title"
+            name: "title"
+            widget: "string"
+          - label: "Permalink"
+            name: "permalink"
+            widget: "string"
+            default: "/"
+
           - label: "Intro Section"
             name: "intro"
             widget: "object"
             fields:
-              - { label: "Intro Heading", name: "intro_heading", widget: "string" }
-              - { label: "Intro Text", name: "intro_text", widget: "markdown" }
-              - { label: "Button Text", name: "intro_button_text", widget: "string" }
-              - { label: "Button Icon", name: "intro_button_icon", widget: "string", default: "fa-arrow-down" }
+              - label: "Intro Heading"
+                name: "intro_heading"
+                widget: "string"
+              - label: "Intro Text"
+                name: "intro_text"
+                widget: "markdown"
+              - label: "Button Text"
+                name: "intro_button_text"
+                widget: "string"
+              - label: "Button Icon"
+                name: "intro_button_icon"
+                widget: "string"
+                default: "fa-arrow-down"
 
           - label: "Featured Post"
             name: "featured"
             widget: "object"
             fields:
-              - { label: "Date", name: "date", widget: "datetime" }
-              - { label: "Headline", name: "headline", widget: "string" }
-              - { label: "Text", name: "text", widget: "text" }
-              - { label: "Image", name: "image", widget: "image" }
-              - { label: "Button Text", name: "button_text", widget: "string" }
-              - { label: "Button URL", name: "button_url", widget: "string" }
+              - label: "Date"
+                name: "date"
+                widget: "datetime"
+              - label: "Headline"
+                name: "headline"
+                widget: "string"
+              - label: "Text"
+                name: "text"
+                widget: "text"
+              - label: "Image"
+                name: "image"
+                widget: "image"
+              - label: "Button Text"
+                name: "button_text"
+                widget: "string"
+              - label: "Button URL"
+                name: "button_url"
+                widget: "string"
 
           - label: "Articles"
             name: "articles"
             widget: "list"
             fields:
-              - { label: "Title", name: "title", widget: "string" }
-              - { label: "Date", name: "date", widget: "datetime" }
-              - { label: "Image", name: "image", widget: "image" }
-              - { label: "Excerpt", name: "excerpt", widget: "text" }
-              - { label: "URL", name: "url", widget: "string" }
+              - label: "Title"
+                name: "title"
+                widget: "string"
+              - label: "Date"
+                name: "date"
+                widget: "datetime"
+              - label: "Image"
+                name: "image"
+                widget: "image"
+              - label: "Excerpt"
+                name: "excerpt"
+                widget: "text"
+              - label: "URL"
+                name: "url"
+                widget: "string"
 
       - label: "Generic Page"
         name: "generic"
         file: "_pages/generic.md"
         fields:
-          - { label: "Title", name: "title", widget: "string" }
-          - { label: "Permalink", name: "permalink", widget: "string" }
-          - { label: "Heading", name: "heading", widget: "string" }
-          - { label: "Subtitle", name: "subtitle", widget: "text" }
-          - { label: "Image", name: "image", widget: "image" }
-          - { label: "Content", name: "content", widget: "markdown" }
+          - label: "Title"
+            name: "title"
+            widget: "string"
+          - label: "Permalink"
+            name: "permalink"
+            widget: "string"
+          - label: "Heading"
+            name: "heading"
+            widget: "string"
+          - label: "Subtitle"
+            name: "subtitle"
+            widget: "text"
+          - label: "Image"
+            name: "image"
+            widget: "image"
+          - label: "Content"
+            name: "content"
+            widget: "markdown"
 
       - label: "Elements Page"
         name: "elements"
         file: "_pages/elements.md"
         fields:
-          - { label: "Title", name: "title", widget: "string" }
-          - { label: "Permalink", name: "permalink", widget: "string" }
+          - label: "Title"
+            name: "title"
+            widget: "string"
+          - label: "Permalink"
+            name: "permalink"
+            widget: "string"
           - label: "Sections"
             name: "sections"
             widget: "list"
             fields:
-              - { label: "Section Title", name: "section_title", widget: "string" }
-              - { label: "Content", name: "content", widget: "markdown" }
-
-
+              - label: "Section Title"
+                name: "section_title"
+                widget: "string"
+              - label: "Content"
+                name: "content"
+                widget: "markdown"
